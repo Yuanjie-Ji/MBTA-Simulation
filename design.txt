@@ -1,0 +1,19 @@
+# Write down your multi-threading designs here!
+
+In this project, I make a thread for each train and passenger.
+
+For each train, it will pause for 0.5 sec at the beginning of each turn.
+Before moving, it will first check the direction, just to make sure the direction is correct. 
+Then, after getting the next station, next station will be locked, and the train will wait until next stop is empty.
+When next station is empty, I move the train. Since current station and next station will
+changed, I also need to record the current station as the previous one in order to unlock it after moving.
+Just to make sure the direction is right, I check the direction again after moving.
+
+For each passenger, it need to first wait for the train in the beginning, so I lock the initial stop of each passenger and await.
+If the train is the one it should board (containing next stop in journey), then it board the train, and current station will be unlocked.
+Then the passenger will be heading to the next station in its journey. When the passenger is on board, its postion is the postion
+of the train it is on. So I will judge if the train's postion is the next station in journey for each turn as long as the passenger is on board.
+If the train arrives next station in journey, I update the next station in journey and let the passenger deboard and wait for another train.
+When a passenger reaches its final destination, I remove its journey from all journeys. The simulation will stop when all journeys are removed
+(all passengers reach final destination).
+

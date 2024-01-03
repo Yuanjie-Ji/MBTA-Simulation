@@ -1,0 +1,23 @@
+{
+  "lines": {
+    "red": [ "A", "B", "D", "G", "F" ],
+    "green": [ "H", "G", "E", "B", "C" ],
+    "orange": [ "L", "K", "J", "I", "H" ],
+    "blue": [ "R", "S", "P", "N", "M", "F" ],
+    "purple": [ "O", "N", "Q", "S", "T", "L" ]
+  },
+  "trips": {
+    "Aardvark": [ "R", "S", "T" ],
+    "Bear": [ "R", "F", "G", "H" ],
+    "Cow": [ "R", "S", "L", "H" ],
+    "Dog": [ "A", "B", "G" ],
+    "Elephant": [ "D", "F", "N", "T" ],
+    "Frog": [ "O", "N", "F", "G", "H" ],
+    "Giraffe": [ "O", "L", "H" ],
+    "Horse": [ "M", "N" ],
+    "Iguana": [ "P", "F", "B", "C" ],
+    "Jaguar": [ "H", "L" ],
+    "Koala": [ "L", "T" ],
+    "Lamprey": [ "L", "H", "G", "F", "S", "T" ]
+  }
+}
